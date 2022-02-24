@@ -1,0 +1,17 @@
+STEPS TAKEN:
+
+1. Provisioned AWS Infrastructure
+2. Configured security groups to open ports 
+3. Configured and installed containerd
+	-Wrote installation script and named it as "install.sh"
+4. Installed kubelet, kubeadm and kubectl 
+	-Wrote installation script for same and named it as "k8s-components.sh"
+5. Configured kubectl to connect to our cluster 
+	-Wrote installation script and named it as "kubectl.sh"
+6. Configured CNI plugin weave-net om cluster as daemon-set
+
+7. Provisioned AWS infrastructure for 2 worker nodes 
+8. Configured security groups for worker nodes 
+9. Disabled swapoff for both the worker nodes.
+10. Followed steps 2, 3, 4 and 5
+11. Checked for weave net communication(logs for container runnibg inside weave-net pod) by opening port for weave net at all nodes
